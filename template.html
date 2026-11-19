@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>참돔 선상낚시 백과</title>
+<meta name="description" content="생미끼에서 타이라바, 텅스텐 헤드까지: 초보를 위한 6분 펜화 백과사전">
+<meta property="og:title" content="참돔 선상낚시의 변천사">
+<meta property="og:description" content="생미끼에서 타이라바, 텅스텐 헤드까지: 초보를 위한 6분 펜화 백과사전">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#faf7f0;--ink:#141414;--soft:#5a5650;--rule:#d9d3c6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Gowun Batang",serif;line-height:1.8;
+  background-image:radial-gradient(rgba(0,0,0,.025) 1px,transparent 1px);background-size:4px 4px}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px 80px}
+#bar{position:fixed;top:0;left:0;height:3px;background:var(--ink);width:0;z-index:9}
+#clock{position:fixed;right:12px;bottom:12px;font:13px "Gowun Batang";background:var(--paper);border:1px solid var(--ink);
+  border-radius:20px;padding:4px 12px;z-index:9}
+header{min-height:92vh;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:40px 0}
+header .kicker{font-family:"Nanum Pen Script";font-size:26px;color:var(--soft)}
+header h1{font-size:clamp(32px,8vw,52px);margin:.1em 0;letter-spacing:-.02em}
+header p{color:var(--soft);margin:.3em 0}
+header svg{width:min(100%,520px);margin:10px auto}
+.hint{font-size:13px;color:var(--soft);margin-top:24px;animation:bob 2s infinite}
+@keyframes bob{50%{transform:translateY(6px)}}
+nav.toc{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:14px 0;margin:0 0 30px}
+nav.toc ol{margin:0;padding-left:1.4em}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--soft)}
+nav.toc .era{color:var(--soft);font-size:13px}
+section.entry{padding:36px 0 30px;border-bottom:1px solid var(--rule)}
+.num{font-family:"Nanum Pen Script";font-size:30px;color:var(--soft);line-height:1}
+.entry h2{font-size:clamp(24px,6vw,32px);margin:.1em 0 .1em;letter-spacing:-.01em}
+.entry .era{display:inline-block;font-size:13px;border:1px solid var(--ink);border-radius:2px;padding:0 8px;margin-bottom:10px}
+.entry .lead{font-size:18px;font-weight:700;margin:.6em 0}
+figure{margin:18px 0;padding:10px;border:1px solid var(--ink);background:#fffdf8;position:relative}
+figure::after{content:"";position:absolute;inset:5px -5px -5px 5px;border:1px solid var(--rule);z-index:-1}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-family:"Nanum Pen Script";font-size:20px;text-align:center;color:var(--soft)}
+svg .d{stroke-dasharray:var(--len);stroke-dashoffset:var(--len)}
+svg.go .d{animation:draw var(--dur,1.4s) ease-in-out forwards;animation-delay:var(--delay,0s)}
+svg .t{opacity:0}
+svg.go .t{animation:fade .8s ease forwards;animation-delay:var(--tdelay,2.4s)}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+.reveal{opacity:0;transform:translateY(12px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+.points{list-style:none;padding:0;margin:16px 0}
+.points li{padding-left:28px;position:relative;margin:6px 0}
+.points li::before{content:"✎";position:absolute;left:0;top:0}
+.gloss{border-left:3px double var(--ink);padding:6px 0 6px 14px;margin:16px 0;font-size:15px}
+.gloss b{font-weight:700}
+.gloss .g-title{font-family:"Nanum Pen Script";font-size:22px}
+footer{text-align:center;color:var(--soft);font-size:13px;padding-top:30px}
+@media (prefers-reduced-motion:reduce){svg .d{stroke-dashoffset:0!important;animation:none!important}svg .t{opacity:1}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div id="clock">⏱ 약 6분 읽기</div>
+<div class="wrap">
+<header>
+  <div class="kicker">초보를 위한 펜화 백과사전</div>
+  <h1>참돔 선상낚시의 변천사</h1>
+  <p>생미끼에서 타이라바, 텅스텐 헤드까지: 채비와 루어는 어떻게 바뀌어 왔을까</p>
+  <svg viewBox="0 0 520 220" class="hero" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path class="d" stroke-width="1.6" d="M10 120 Q40 110 70 120 T130 120 T190 120 T250 120 T310 120 T370 120 T430 120 T510 120"/>
+    <path class="d" stroke-width="1" d="M30 132 Q55 126 80 132 T130 132 M300 134 Q330 128 360 134 T420 134"/>
+    <path class="d" stroke-width="2" d="M140 118 L170 92 L330 92 L360 118 Z"/>
+    <path class="d" stroke-width="1.4" d="M200 92 L200 62 L250 62 L250 92 M210 72 h30"/>
+    <path class="d" stroke-width="1.2" d="M300 92 L300 40 Q330 30 372 46"/>
+    <path class="d" stroke-width=".8" d="M372 46 L372 190"/>
+    <path class="d" stroke-width="1.8" d="M330 196 Q352 176 384 186 Q402 190 410 198 Q400 206 384 208 Q352 214 330 196 Z"/>
+    <path class="d" stroke-width="1.4" d="M330 196 L314 186 L316 208 Z M386 192 a2 2 0 1 0 .1 0 M348 192 q10 -8 22 -6 M350 202 q12 4 24 2"/>
+    <path class="d" stroke-width=".7" d="M150 112 l6 -14 M162 112 l6 -14 M174 112 l6 -14 M186 112 l6 -14 M198 112 l6 -14 M210 112 l6 -14 M222 112 l6 -14 M234 112 l6 -14 M246 112 l6 -14 M258 112 l6 -14 M270 112 l6 -14 M282 112 l6 -14 M294 112 l6 -14 M306 112 l6 -14 M318 112 l6 -14 M330 112 l6 -14"/>
+    <path class="d" stroke-width=".9" d="M20 214 Q120 200 220 212 T420 206 T510 212"/>
+  </svg>
+  <button id="play" style="margin:18px auto 0;font:16px 'Gowun Batang';background:var(--paper);border:1.5px solid var(--ink);border-radius:24px;padding:8px 22px;cursor:pointer">▶ 6분 자동 읽기 (5분 40초에 끝나요)</button>
+  <div class="hint">↓ 또는 직접 스크롤하면 펜이 그림을 그려요</div>
+</header>
+<nav class="toc reveal"><b>목차</b><ol id="toc"></ol></nav>
+<main id="main"></main>
+<footer>백과사전 연습 · 멀티 에이전트(집필 5 + 검수 5)로 작성 · 연도는 대략적인 흐름 기준</footer>
+</div>
+<script>
+const DATA = __DATA__;
+const toc=document.getElementById('toc'), main=document.getElementById('main');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+DATA.forEach((s,i)=>{
+  toc.insertAdjacentHTML('beforeend',`<li><a href="#s${i}">${esc(s.title)}</a> <span class="era">${esc(s.era)}</span></li>`);
+  main.insertAdjacentHTML('beforeend',`<section class="entry" id="s${i}">
+    <div class="num reveal">No. ${i+1}</div>
+    <h2 class="reveal">${esc(s.title)}</h2><span class="era reveal">${esc(s.era)}</span>
+    <p class="lead reveal">${esc(s.lead)}</p>
+    <figure class="reveal">${s.svg}<figcaption>fig. ${i+1}: ${esc(s.title)}</figcaption></figure>
+    ${s.paragraphs.map(p=>`<p class="reveal">${esc(p)}</p>`).join('')}
+    <ul class="points reveal">${s.keyPoints.map(k=>`<li>${esc(k)}</li>`).join('')}</ul>
+    <div class="gloss reveal"><div class="g-title">용어 풀이</div>${s.glossary.map(g=>`<div><b>${esc(g.term)}</b>: ${esc(g.meaning)}</div>`).join('')}</div>
+  </section>`);
+});
+document.querySelectorAll('svg').forEach(svg=>{
+  svg.querySelectorAll('script,foreignObject').forEach(n=>n.remove());
+  const paths=[...svg.querySelectorAll('path,line,polyline,polygon,circle,ellipse,rect')];
+  paths.forEach(p=>{if(!p.classList.contains('d'))p.classList.add('d');});
+  const n=paths.length, total=Math.min(4.5,1.2+n*.08);
+  paths.forEach((p,k)=>{
+    let L=1000;try{L=Math.ceil(p.getTotalLength())+2}catch(e){}
+    p.style.setProperty('--len',L);
+    p.style.setProperty('--delay',(k*(total/Math.max(n,1))).toFixed(2)+'s');
+    p.style.setProperty('--dur',Math.min(1.6,.4+L/400).toFixed(2)+'s');
+  });
+  svg.style.setProperty('--tdelay',(total+.3).toFixed(1)+'s');
+  svg.querySelectorAll('.t').forEach(t=>t.style.animationDelay=(total+.3)+'s');
+});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){
+  e.target.classList.add(e.target.tagName.toLowerCase()==='svg'?'go':'in');io.unobserve(e.target);}}),{threshold:.25});
+document.querySelectorAll('.reveal,svg').forEach(el=>io.observe(el));
+const bar=document.getElementById('bar'),clock=document.getElementById('clock');
+const TOUR={total:340,elapsed:0,done:false,running:false};window.__tour=TOUR;
+addEventListener('scroll',()=>{const h=document.documentElement;const r=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+  bar.style.width=(r*100)+'%';if(TOUR.running||TOUR.done)return;const left=Math.max(0,Math.round(6*(1-r)));clock.textContent=left?`⏱ 남은 시간 약 ${left}분`:'✓ 다 읽었어요!';});
+// 6분 자동 읽기: 섹션별 글자 수에 비례해 시간을 나눠, 총 340초(5분 40초)에 반드시 끝난다
+const speed=Math.max(1,+(new URLSearchParams(location.search).get('speed')||1));
+const fmt=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
+document.getElementById('play').onclick=()=>{
+  if(TOUR.running)return;
+  const secs=[...document.querySelectorAll('section.entry')];
+  const w=secs.map(s=>s.innerText.replace(/\s/g,'').length), W=w.reduce((a,b)=>a+b,0);
+  const intro=10, avail=TOUR.total-intro; let acc=intro; const marks=[[0,0]];
+  secs.forEach((s,i)=>{marks.push([acc,s.offsetTop-20]);acc+=avail*w[i]/W;});
+  const h=document.documentElement; marks.push([TOUR.total,h.scrollHeight-h.clientHeight]);
+  document.documentElement.style.scrollBehavior='auto';
+  TOUR.running=true;TOUR.done=false;const t0=performance.now();
+  (function step(now){
+    const t=Math.min(TOUR.total,(now-t0)/1000*speed);TOUR.elapsed=t;
+    let k=0;while(k<marks.length-2&&marks[k+1][0]<=t)k++;
+    const [ta,ya]=marks[k],[tb,yb]=marks[k+1];const y=ya+(yb-ya)*((t-ta)/((tb-ta)||1));
+    scrollTo(0,y);clock.textContent=`▶ ${fmt(t)} / 6:00`;
+    if(t<TOUR.total)requestAnimationFrame(step);
+    else{TOUR.running=false;TOUR.done=true;clock.textContent=`✓ ${fmt(t)}에 끝! (6분 이내)`;}
+  })(t0);
+};
+</script>
+</body>
+</html>
